@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
 
 class ForumScreen extends StatelessWidget {
+  const ForumScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Community Forum'),
+        title: const Text('Community Forum'),
       ),
-      body: Center(
-        child: Text('Community forum feature under development.'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Add functionality for creating a new post.
-        },
-        child: Icon(Icons.add),
-        tooltip: 'Create a Post',
+      body: const Center(
+        child: Text(
+          'Community Forum Screen',
+          style: TextStyle(fontSize: 20),
+        ),
       ),
     );
   }
